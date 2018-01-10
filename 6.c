@@ -1,32 +1,16 @@
-include<stdio.h>
+#include<stdio.h>
 #include<conio.h>
-void main()
+void main(){
+int a;
+printf("\n enter the year");
+scanf("%d",&a);
+if(year%4==0&&year%400==0)||(year%100!==0)
 {
-int yr;
-printf("Enter the year:");
-scanf("%d",&yr);
-if(yr%4==0)
-{
-if(yr%100==0)
-{
-if(yr%400==0)
-{
-printf("This is a leap year",yr);
+printf("it is leap year");
 }
 else
 {
-printf("This is not a leap year",yr);
+printf("it is not a leap year");
 }
-}
-else
-{
-printf("This is a leap year",yr);
-}
-}
-else
-{
-printf("This is not a leap year",yr);
-}
-}
-getch();
+getch()
 }

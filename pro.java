@@ -5,7 +5,7 @@
 +    }
 +    for(int i=1; i<strs.length; i++){
 +        String analyzing = str[i];
-+        int j=0;
++        int j=0
 +        for(; j<Math.min(longestPrefix.length(), str[i].length()); j++){
 +            if(longestPrefix.charAt(j) != analyzing.charAt(j)){
 +                break;
